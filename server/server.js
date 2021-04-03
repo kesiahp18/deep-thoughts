@@ -11,6 +11,7 @@ const server = new ApolloServer({
   resolvers
 });
 
+//integrate Apollo server with the Express app as middleware
 server.applyMiddleware({ app });
 
 app.use(express.urlencoded({ extended: false }));
